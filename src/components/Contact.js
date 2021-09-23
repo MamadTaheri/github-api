@@ -9,6 +9,7 @@ const Contact = () => {
                 <h2>تماس با من</h2>
                 <h5>جهت تماس با من میتوانید از مسیرهای ارتباطی زیر استفاده کنید:</h5>
                 <ul className="contact-list p-1 p-md-4">
+                    <p>salam</p>
 
                     <li>
                         <i className="fa fa-envelope-open-o" aria-hidden="true"></i>
