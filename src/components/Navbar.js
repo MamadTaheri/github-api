@@ -4,21 +4,21 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <span className="h5">MOHAMMAD TAGERI </span>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <Link to="/" class="nav-link">Home</Link>
+            <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav">
+                    <li className="nav-item">
+                        <Link to="/" className="nav-link">Home</Link>
                     </li>
-                    <li class="nav-item">
-                        <Link to="/about" class="nav-link">About</Link>
+                    <li className="nav-item">
+                        <Link to="/about" className="nav-link">About</Link>
                     </li>
-                    <li class="nav-item">
-                        <Link to="/contact" class="nav-link">Contact</Link>
+                    <li className="nav-item">
+                        <Link to="/contact" className="nav-link">Contact</Link>
                     </li>
                 </ul>
             </div>
