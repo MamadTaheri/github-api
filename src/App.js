@@ -1,12 +1,21 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+
+// Components
 import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About'
+import Contact from './components/Contact'
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <h1>App Component</h1>
+      <Switch>
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/" component={Home} />
+      </Switch>
     </div>
   );
 };
