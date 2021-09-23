@@ -1,10 +1,14 @@
 import React from "react";
 
+// image
+import img from '../assets/img.jpg'
+
 const About = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-8 code-left">
+
+        <div className="col-md-6">
           <br />
           <p>
             Hi. My name is mohammad. I'm originally from Iran. I have Master of
@@ -34,6 +38,10 @@ const About = () => {
             programming using PHP language. Knowadays, I'm trying to make
             progress as much as I can in working with laravel.
           </p>
+        </div>
+
+        <div  className="col-md-6">
+           <img src={img} alt="Mohammad Taheri" />
         </div>
       </div>
     </div>
