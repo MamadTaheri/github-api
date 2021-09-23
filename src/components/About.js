@@ -40,7 +40,7 @@ const About = () => {
           </p>
         </div>
 
-        <div  className="col-md-6">
+        <div className="col-md-6 img-fluid">
            <img src={img} alt="Mohammad Taheri" />
         </div>
       </div>
