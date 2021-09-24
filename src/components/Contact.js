@@ -19,19 +19,19 @@ const Contact = () => {
                     <li>
                         <i className="fa fa-github" aria-hidden="true"></i>
                         <span>لینکدین :</span>
-                        <a href="https://www.linkedin.com/in/mohammad-taheri-186101177/" target="_blank">مشاهده لینک</a>
+                        <a href="https://www.linkedin.com/in/mohammad-taheri-186101177/" target="_blank" rel="noreferrer">مشاهده لینک</a>
                     </li>
 
                     <li>
                         <i className="fa fa-github" aria-hidden="true"></i>
                         <span>گیت هاب :</span>
-                        <a href="https://github.com/MamadTaheri68" target="_blank">مشاهده لینک</a>
+                        <a href="https://github.com/MamadTaheri68" target="_blank" rel="noreferrer">مشاهده لینک</a>
                     </li>
 
                     <li>
                         <i className="fa fa-telegram" aria-hidden="true"></i>
                         <span>  تلگرام :</span>
-                        <a href="http://t.me/mohammad_taheri_1989" target="_blank">مشاهده لینک</a>
+                        <a href="http://t.me/mohammad_taheri_1989" target="_blank" rel="noreferrer">مشاهده لینک</a>
                     </li>
 
                 </ul>
