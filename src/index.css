@@ -16,3 +16,16 @@ code {
   direction: rtl;
   text-align: right;
 }
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
