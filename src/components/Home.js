@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const Home = () => {
 
-  const [users, setUsers] = useState([]);
+  const {users, setUsers} = useState([]);
 
   return (
 
@@ -10,7 +10,7 @@ const Home = () => {
       <div className="row mx-md-5 justify-content-center">
         <div className="col-md-3 ">
           <div className="form-group">
-            <label for="exampleInputEmail1">Github UserName</label>
+            <label htmlFor="exampleInputEmail1">Github UserName</label>
             <input  type="text" className="form-control"  placeholder="Enter github username ..."  />
           </div>
 
