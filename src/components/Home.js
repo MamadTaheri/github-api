@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import User from "./User";
 
 const Home = () => {
@@ -14,7 +14,6 @@ const Home = () => {
   }
 
   const searchHandler = () => {
-    console.log(url + text);
     axios.get(url + text)
     .then(response => {
       setData(response.data);
@@ -45,7 +44,7 @@ const Home = () => {
            <div className="col-md-12 pt-4">
              <span className="badge-primary px-4 py-2 rounded-pill"> Total found users : {data.total_count}</span>
            </div>  
-           <div className="col-md-12 pt-4">
+           <div className="row justify-content-center pt-4">
              {data.items.map(user => <User data={user} key={user.id} />)}
            </div>  
           </> 
