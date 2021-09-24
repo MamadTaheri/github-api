@@ -38,18 +38,20 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="row">
+      
          { data.total_count >= 0 && 
           <>
-           <div className="col-md-12 pt-4">
-             <span className="badge-primary px-4 py-2 rounded-pill"> Total found users : {data.total_count}</span>
-           </div>  
+          <div className="row"> 
+            <div className="col-md-12 pt-4">
+              <span className="badge-primary px-4 py-2 rounded-pill"> Total found users : {data.total_count}</span>
+            </div>  
+           </div>
            <div className="row justify-content-center pt-4">
              {data.items.map(user => <User data={user} key={user.id} />)}
            </div>  
           </> 
          }
-      </div>
+     
     </div>
   );
 };
