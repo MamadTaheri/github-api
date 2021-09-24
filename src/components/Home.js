@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import User from "./User";
 
 const Home = () => {
 
@@ -24,9 +25,9 @@ const Home = () => {
 
   return (
 
-    <div className="container-fluid p-md-5">
+    <div className="container p-md-5">
       <div className="row mx-md-5 justify-content-center">
-        <div className="col-md-3 ">
+        <div className="col-md-5 ">
           <div className="form-group">
             <label htmlFor="exampleInputEmail1">Github UserName</label>
             <input value={text} onChange={changeHandler} type="text" className="form-control"  placeholder="Enter github username ..."  />
@@ -36,6 +37,19 @@ const Home = () => {
             Search
           </button>
         </div>
+      </div>
+
+      <div className="row">
+         { data.total_count >= 0 && 
+          <>
+           <div className="col-md-12 pt-4">
+             <span className="badge-primary px-4 py-2 rounded-pill"> Total found users : {data.total_count}</span>
+           </div>  
+           <div className="col-md-12 pt-4">
+             {data.items.map(user => <User data={user} key={user.id} />)}
+           </div>  
+          </> 
+         }
       </div>
     </div>
   );
