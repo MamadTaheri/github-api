@@ -5,7 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import Navbar from './components/UI/Navbar';
 import Home from './components/Home';
 import About from './components/About'
-import Contact from './components/Contact'
+import Contact from './components/pages/Contact'
 
 const App = () => {
   return (
