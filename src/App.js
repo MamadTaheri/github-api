@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 
 // Components
@@ -9,6 +9,13 @@ import Contact from "./components/pages/Contact";
 import User from "./components/pages/User";
 
 const App = () => {
+
+  const [users, setUsers] = useState([]);
+
+  const updateUsers = users => {
+    setUsers(users);
+  }
+
   return (
     <div>
       <Navbar />
@@ -23,7 +30,7 @@ const App = () => {
           <User />
         </Route>
         <Route path="/" exact>
-          <Home />
+          <Home updateUsers={updateUsers} users={users} />
         </Route>
       </Switch>
     </div>
