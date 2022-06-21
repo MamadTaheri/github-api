@@ -3,10 +3,10 @@ import { Route, Switch } from "react-router-dom";
 
 // Components
 import Navbar from "./components/UI/Navbar";
-import Home from "./components/pages/Home";
-import About from "./components/pages/About";
-import Contact from "./components/pages/Contact";
-import User from "./components/pages/User";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import User from "./pages/User";
 
 const App = () => {
 

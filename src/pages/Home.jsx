@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
-import spinner from "../../assets/spinner.gif";
-import UserWrapper from "../user/UserWrapper";
+import spinner from '../assets/spinner.gif';
+import UserWrapper from "../components/user/UserWrapper";
 
 const Home = ({ updateUsers, users }) => {
   const [text, setText] = useState("");

@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import spinner from "../../assets/spinner.gif";
+import spinner from "../assets/spinner.gif";
 
 const User = () => {
   const { login } = useParams();
