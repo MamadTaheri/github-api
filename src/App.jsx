@@ -19,7 +19,6 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <hr />
       <Switch>
         <Route path="/about" exact>
           <About />
