@@ -34,26 +34,39 @@
 }
 
 .custom-navbar .rightSide {
-  text-align: right;
+  direction: rtl;
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
+}
+
+.custom-navbar .rightSide ul {
+  padding: 0;
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.custom-navbar .rightSide .links {
-  max-height: 80px;
+.custom-navbar .rightSide ul li {
+  margin: 8px 2px;
+  padding: 6px;
+  border-radius: 16px;
+  text-align: center;
 }
 
-.custom-navbar .rightSide .links a {
+.custom-navbar .rightSide ul li:hover {
+  background-color: #0a7adb;
+}
+
+.custom-navbar .rightSide ul li a {
   text-decoration: none;
   color: white;
   font-size: 21px;
@@ -61,14 +74,12 @@
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
   padding: 6px 12px;
-  border-radius: 16px;
 }
 
-.custom-navbar .rightSide .links a:hover {
-  background-color: #7e7e7e;
-}
-
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 792px) {
+  .custom-navbar {
+    position: relative;
+  }
   .custom-navbar .leftSide {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -88,7 +99,30 @@
     cursor: pointer;
   }
   .custom-navbar .rightSide {
-    display: none;
+    z-index: 101;
+    background-color: #031729;
+    width: 200px;
+    height: calc(100vh - 80px);
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 80px;
+    right: -200px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .custom-navbar .rightSide ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .custom-navbar .rightSide ul li {
+    width: 80%;
+  }
+  .custom-navbar .rightSide.active {
+    right: 0;
   }
 }
 /*# sourceMappingURL=Navbar.css.map */
