@@ -25,7 +25,7 @@ const Home = ({ updateUsers, users }) => {
   };
 
   return (
-    <div className="container p-md-5">
+    <div className="container p-3 p-md-5">
       <div className="row mx-md-5 justify-content-center">
         <div className="col-md-5 ">
           <div className="form-group">

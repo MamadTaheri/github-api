@@ -1,13 +1,13 @@
 import React from "react";
+import "./styles/About.css"
 
 // image
 import img from '../assets/images/img.jpg'
 
 const About = () => {
   return (
-    <div className="container">
-      <div className="row">
-
+    <div className="container p-3 p-md-5">
+      <div className="row custom-row-for-responsive">
         <div className="col-md-6">
           <br />
           <p>
@@ -41,7 +41,7 @@ const About = () => {
         </div>
 
         <div className="col-md-6">
-           <img src={img} alt="Mohammad Taheri" className="img-fluid" />
+           <img src={img} alt="Mohammad Taheri" className="img-fluid rounded-circle" />
         </div>
       </div>
     </div>
