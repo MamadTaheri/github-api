@@ -2,7 +2,8 @@ import React from "react";
 import "./styles/About.css"
 
 // image
-import img from '../assets/images/img.jpg'
+// import img from '../assets/images/img.jpg'
+import img from '../assets/images/clean.png'
 
 const About = () => {
   return (
@@ -41,7 +42,7 @@ const About = () => {
         </div>
 
         <div className="col-md-6">
-           <img src={img} alt="Mohammad Taheri" className="img-fluid rounded-circle" />
+           <img src={img} alt="Mohammad Taheri" className="img-fluid custom-avatar" />
         </div>
       </div>
     </div>
