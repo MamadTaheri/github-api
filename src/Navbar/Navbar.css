@@ -76,7 +76,11 @@
   padding: 6px 12px;
 }
 
-@media only screen and (max-width: 792px) {
+.custom-navbar .rightSide ul li a svg {
+  margin-left: 9px;
+}
+
+@media only screen and (max-width: 920px) {
   .custom-navbar {
     position: relative;
   }
@@ -101,14 +105,14 @@
   .custom-navbar .rightSide {
     z-index: 101;
     background-color: #031729;
-    width: 200px;
+    width: 300px;
     height: calc(100vh - 80px);
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     top: 80px;
-    right: -200px;
+    right: -300px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
@@ -120,6 +124,10 @@
   }
   .custom-navbar .rightSide ul li {
     width: 80%;
+    text-align: right;
+  }
+  .custom-navbar .rightSide ul li a svg {
+    margin-left: 2rem;
   }
   .custom-navbar .rightSide.active {
     right: 0;

@@ -17,7 +17,10 @@ const Navbar = () => {
         <ul>
           {linksData.map((item) => (
             <li key={item.id}>
-              <Link to={item.path} onClick={() => setShow(false)}>{item.title}</Link>
+              <Link to={item.path} onClick={() => setShow(false)}>
+                {item.icon}
+                {item.title}
+                </Link>
             </li>
           ))}
         </ul>
@@ -29,7 +32,7 @@ const Navbar = () => {
 export default Navbar;
 
 const linksData = [
-  { id: 1, path: "/", title: "خانه" },
-  { id: 2, path: "/about", title: "درباره ما" },
-  { id: 3, path: "/contact", title: "تماس با ما" },
+  { id: 1, path: "/", title: "خانه", icon: <FaIcons.FaHome /> },
+  { id: 2, path: "/about", title: "درباره ما", icon: <FaIcons.FaInfo /> },
+  { id: 3, path: "/contact", title: "تماس با ما", icon: <FaIcons.FaPhone /> },
 ];

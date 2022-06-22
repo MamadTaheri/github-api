@@ -45,13 +45,16 @@
           margin-right: 15px;
           transition: 0.3s all ease-in-out;
           padding: 6px 12px;
+          svg {
+            margin-left: 9px;
+          }
         }
       }
     }
   }
 }
 
-@media only screen and (max-width: 792px) {
+@media only screen and (max-width: 920px) {
   .custom-navbar {
     position: relative;
     .leftSide {
@@ -69,17 +72,23 @@
     .rightSide {
       z-index: 101;
       background-color: #031729;
-      width: 200px;
+      width: 300px;
       height: calc(100vh - 80px);
       position: fixed;
       display: flex;
       top: 80px;
-      right: -200px;
+      right: -300px;
       transition: all 0.3s ease-in-out;
       ul {
         flex-direction: column;
         li {
-            width: 80%;
+          width: 80%;
+          text-align: right;
+          a {
+            svg {
+              margin-left: 2rem;
+            }
+          }
         }
       }
     }
