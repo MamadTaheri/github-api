@@ -8,7 +8,7 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="custom-navbar">
+    <div className="custom-navbar persian-font">
       <div className="leftSide">
         <img src={logo} />
         <FaIcons.FaBars onClick={() => setShow(!show)} />
