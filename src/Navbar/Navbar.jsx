@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
-import logo from "../assets/images/MtGithubFinderLogo.png";
-import "./Navbar.css";
+import "./navbar.scss";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -10,7 +9,7 @@ const Navbar = () => {
   return (
     <div className="custom-navbar persian-font">
       <div className="leftSide">
-        <img src={logo} />
+        <h3>M.Taheri</h3>
         <FaIcons.FaBars onClick={() => setShow(!show)} />
       </div>
       <div className={show ? "rightSide active" : "rightSide"}>
