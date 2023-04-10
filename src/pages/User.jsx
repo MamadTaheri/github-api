@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import spinner from "../assets/images/spinner.gif";
 import * as FaIcons from "react-icons/fa";
-import "./styles/User.css";
+import "./styles/user.scss";
 
 const User = () => {
   const { login } = useParams();

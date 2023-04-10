@@ -9,32 +9,23 @@ import Contact from "./pages/Contact";
 import User from "./pages/User";
 
 const App = () => {
+   const [users, setUsers] = useState([]);
 
-  const [users, setUsers] = useState([]);
+   const updateUsers = (users) => {
+      setUsers(users);
+   };
 
-  const updateUsers = users => {
-    setUsers(users);
-  }
-
-  return (
-    <div>
-      <Navbar />
-      <Switch>
-        <Route path="/about" exact>
-          <About />
-        </Route>
-        <Route path="/contact" exact>
-          <Contact />
-        </Route>
-        <Route path="/user/:login" exact>
-          <User />
-        </Route>
-        <Route path="/" exact>
-          <Home updateUsers={updateUsers} users={users} />
-        </Route>
-      </Switch>
-    </div>
-  );
+   return (
+      <div>
+         <Navbar />
+         <Switch>
+            <Route path="/about" component={<About />} />
+            <Route path="/contact" component={<Contact />} />
+            <Route path="/user/:login" component={<User />} />
+            <Route path="/" component={<Home updateUsers={updateUsers} users={users} />} />
+         </Switch>
+      </div>
+   );
 };
 
 export default App;
