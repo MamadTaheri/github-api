@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className="custom-navbar persian-font">
       <div className="leftSide">
-        <h3>M.Taheri</h3>
+        <span>M.Taheri</span>
         <FaIcons.FaBars onClick={() => setShow(!show)} />
       </div>
       <div className={show ? "rightSide active" : "rightSide"}>

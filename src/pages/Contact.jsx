@@ -29,11 +29,11 @@ const Contact = () => {
                 <span>لینکدین :</span>
                 <h5>
                   <a
-                    href="https://www.linkedin.com/in/mohammad-taheri-186101177/"
+                    href="https://www.linkedin.com/in/mohammad-taheri1/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    www.linkedin.com/in/mohammad-taheri-186101177
+                    https://www.linkedin.com/in/mohammad-taheri1/
                   </a>
                 </h5>
               </li>
@@ -43,11 +43,11 @@ const Contact = () => {
                 <span>گیت هاب :</span>
                 <h5>
                   <a
-                    href="https://github.com/MamadTaheri68"
+                    href="https://github.com/mohammad-taheri1"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    github.com/MamadTaheri68
+                    https://github.com/mohammad-taheri1
                   </a>
                 </h5>
               </li>
