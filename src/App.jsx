@@ -19,10 +19,10 @@ const App = () => {
       <div>
          <Navbar />
          <Switch>
-            <Route path="/about" component={<About />} />
-            <Route path="/contact" component={<Contact />} />
-            <Route path="/user/:login" component={<User />} />
-            <Route path="/" component={<Home updateUsers={updateUsers} users={users} />} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/user/:login" component={User} />
+            <Route path="/" render={(props) => <Home updateUsers={updateUsers} users={users} {...props} />} />
          </Switch>
       </div>
    );
